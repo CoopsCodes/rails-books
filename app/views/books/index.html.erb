@@ -1,1 +1,13 @@
 <h1>My Books</h1>
+
+<div class="book-list">
+<% @books.each do |book| %>   
+    <div>
+          <h2><%= book.title %></h2>
+          <h3><%= book.author %></h3>
+        <a href="/books/<%= book.id %>">
+          Details >
+        </a>
+    </div> 
+  <% end %>
+</div>
