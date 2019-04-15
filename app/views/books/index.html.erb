@@ -1,11 +1,11 @@
-<h1>My Books</h1>
+<div class="title">My Books</div>
 
 <div class="book-list">
 <% @books.each do |book| %>   
-    <div>
+    <div class="books">
           <h2><%= book.title %></h2>
           <h3><%= book.author %></h3>
-        <a href="/books/<%= book.id %>">
+        <a class="details" href="/books/<%= book.id %>">
           Details >
         </a>
     </div> 

@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+*{
+  margin: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Goudy Bookletter 1911', serif;
+  background: url(https://images.unsplash.com/photo-1497796742626-fe30f204ec54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80);
+  background-attachment: fixed;
+  background-position: center;
+}
+body:before {
+  content: " ";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: -webkit-radial-gradient(top center, ellipse cover, rgba(224, 229, 236, 0.425) 0%,rgba(35, 24, 80, 0.5) 100%);
+}
+.title{
+  font-size: 100px;
+  margin-bottom: 10px;
+  background: rgb(255, 240, 242);
+  color: #1982C4;
+  width: 100vw;
+  text-align: center;
+  
+}
+.book-list{
+  display: flex;
+  width: 70vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.books{
+  color: rgb(255, 240, 242);
+  text-align: left;
+  width: 70vw;
+  text-shadow: 2px 2px #34113F;
+}
+h2{
+  font-size: 60px;
+}
+.details{
+  text-decoration: none;
+  text-shadow: none;
+  color: aliceblue;
+}
